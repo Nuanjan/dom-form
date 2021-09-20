@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM and FORM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="center">
+        <!-- <h1>Hello</h1>
+        <button onclick="alert('You click me!')" class="btn">Click Me One</button>
+        <button onclick="logger()" class="btn">Click Me Two</button>
+        <button onclick="messager(this)" class="btn">Click Me Three</button>
+        <button onclick="messager(result4)" class="btn">Click Me Four</button>
+        <button onclick="messager(result5)" class="btn">Click Me Five</button>
+        <div id="result4">DIV FOR bUTTON FOUR</div>
+        <div id="result5">DIV FOR bUTTON FIVE</div> -->
+        <div class="m-bottom">
+            <form action="">
+                <label for="color">Choose your favorite color:</label>
+                <select onchange="alert('you cllicked ' + this.value)" name="color" id="color">
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="purple">Purple</option>
+                    <option value="pink">Pink</option>
+                </select>
+        </div>
+        <div class="m-bottom">
+            <label for="message">Enter message:</label>
+            <!-- oninput will track every key stock when user type, but onchange will trigger only when user out of the input focus -->
+            <input oninput="messagePrint(this)" type="text" name="message" id="message">
+        </div>
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

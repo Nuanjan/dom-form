@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Gluten:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Gluten", cursive;
+}
+
+.btn {
+  /* we use em because we want the padding depend on front size */
+  padding: 0.5em 1em;
+  border: 0;
+  border-radius: 0.2em;
+  background-color: aquamarine;
+  cursor: pointer;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.center h1 {
+  text-align: center;
+}
+
+#result4,
+#result5 {
+  margin-top: 1.5rem;
+  border: 3px solid black;
+  width: 100%;
+  min-height: 100px;
+  padding: 10%;
+}
+.m-bottom {
+  margin-bottom: 1rem;
+}
